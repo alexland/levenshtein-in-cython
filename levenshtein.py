@@ -24,5 +24,5 @@ def levenshtein(w1, w2, LuT):
 	return NP.where(tdiff==0, 0, 1).sum()
 
 
-p_levenshtein = partial(w1, w2,
+p_levenshtein = partial(levenshtein,
 	LuT = {k:v for v, k in enumerate(string.ascii_lowercase)})
