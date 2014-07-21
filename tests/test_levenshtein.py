@@ -18,7 +18,7 @@ import pytest
 
 
 def fnx1(w1, w2):
-	return LV.levenshtein(w1, w2)
+	return LV.p_levenshtein(w1, w2)
 
 
 
