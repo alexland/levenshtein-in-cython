@@ -8,3 +8,4 @@ pycallgraph==1.0.1
 pyparsing==2.0.2
 pytest==2.6.0
 requests==2.2.1
+coveralls==0.4.2
