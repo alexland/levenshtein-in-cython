@@ -2,8 +2,12 @@
 # encoding: utf-8
 
 import string
+import warnings
 import numpy as NP
 from functools import partial
+
+
+warnings.filterwarnings('ignore')
 
 
 
