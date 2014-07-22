@@ -13,7 +13,7 @@ import levenshtein as LV
 import pytest
 
 
-pytest_plugins = "pytest-cov"
+# pytest_plugins = "pytest-cov"
 
 
 warnings.filterwarnings('ignore')
