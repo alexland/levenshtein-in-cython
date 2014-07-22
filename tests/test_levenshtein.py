@@ -8,11 +8,15 @@ to run tests: python3 runtests.py;
 
 '''
 
-
+import warnings
 import levenshtein as LV
 import pytest
 
 
+pytest_plugins = "pytest-cov"
+
+
+warnings.filterwarnings('ignore')
 
 
 
