@@ -1,1 +1,2 @@
-initial commit to this project's repo
+
+python3 runtests.py -v
