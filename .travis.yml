@@ -1,11 +1,10 @@
-language:
-    - python
-# python version
+language: python
 python:
   - 3.4
-# install dependencies
 install:
-    - pip install -r requirements.txt --use-mirrors
-# run tests
+  - pip install -r requirements.txt --use-mirrors
+  - pip install coveralls
 script:
-    - python3 runtests.py
+  - python3 runtests.py
+after_success:
+  coveralls
