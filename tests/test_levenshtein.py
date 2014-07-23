@@ -12,6 +12,9 @@ import warnings
 import levenshtein as LV
 import pytest
 
+import sys
+sys.path.append('../levpy/')
+
 
 # pytest_plugins = "pytest-cov"
 
