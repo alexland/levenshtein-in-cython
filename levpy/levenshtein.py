@@ -8,33 +8,9 @@ import warnings
 import numpy as NP
 from functools import partial
 
-import sys
-sys.path.append("./")
 
 warnings.filterwarnings('ignore')
 
-
-def determine_path ():
-    """
-	modified from https://wiki.python.org/moin/Distutils/Tutorial
-
-	"""
-	try:
-		root = __file__
-        if os.path.islink (root):
-            root = os.path.realpath (root)
-        return os.path.dirname (os.path.abspath (root))
-    except:
-        print "something is wrong"
-        print "no __file__ variable. please contact package author"
-        sys.exit ()
-
-
-def start ():
-    print "module is running"
-    print determine_path ()
-    files = [f for f in os.listdir(determine_path () + "/assets")]
-    print files
 
 
 def levenshtein(w1, w2, LuT):
@@ -58,6 +34,4 @@ p_levenshtein = partial(levenshtein,
 	LuT = {k:v for v, k in enumerate(string.ascii_lowercase)})
 
 
-
-if __name__ == "__main__":
-	print "now what?"
+print(p_levenshtein('pistol', 'piston'))
