@@ -6,7 +6,6 @@ install:
   - pip install python-coveralls
   - pip install nose
 script:
-  - python3 runtests.py
-  - nosetests --with-coverage
+  - py.test --cov tests/
 after_success:
   - coveralls
