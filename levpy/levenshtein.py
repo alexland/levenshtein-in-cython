@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 
 
 
-def levenshtein(w1, w2, LuT):
+def levenshtein_dist(w1, w2, LuT):
 	'''
 	returns: levenshtein distance as int
 	pass in: two words as python strings;

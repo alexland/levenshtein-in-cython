@@ -27,7 +27,7 @@ import hamming as HM
 
 
 def fnx1(s1, s2):
-	return HM.hamming(s1, s2)
+	return HM.hamming_dist(s1, s2)
 
 
 

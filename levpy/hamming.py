@@ -1,7 +1,7 @@
 
 
 
-def hamming_distance(s1, s2):
+def hamming_dist(s1, s2):
 	'''
 	returns:
 	pass in:

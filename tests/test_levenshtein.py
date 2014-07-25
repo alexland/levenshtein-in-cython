@@ -27,7 +27,7 @@ import_pkg_modules()
 import levenshtein as LV
 
 def fnx1(w1, w2):
-	return LV.p_levenshtein(w1, w2)
+	return LV.p_levenshtein_dist(w1, w2)
 
 
 
