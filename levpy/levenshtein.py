@@ -30,8 +30,8 @@ def levenshtein_dist(w1, w2, LuT):
 	return NP.where(tdiff==0, 0, 1).sum()
 
 
-p_levenshtein = partial(levenshtein,
+p_levenshtein_dist = partial(levenshtein_dist,
 	LuT = {k:v for v, k in enumerate(string.ascii_lowercase)})
 
 
-print(p_levenshtein('pistol', 'piston'))
+print(p_levenshtein_dist('pistol', 'piston'))
